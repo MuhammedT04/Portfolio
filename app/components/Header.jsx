@@ -60,8 +60,10 @@ const Header = () => {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.2 }}
-            href="/CV-Resume.pdf"
+            href="/CVResume.pdf"
             download
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative z-10 w-fit overflow-hidden rounded-full border  px-10 py-3 text-black flex items-center gap-2 cursor-pointer "
           >
             {/* Animated text */}
