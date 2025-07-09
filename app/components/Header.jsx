@@ -4,15 +4,6 @@ import React from "react";
 import { motion } from "motion/react";
 
 const Header = () => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/CV-Resume.pdf";
-    link.setAttribute("download", "Muhammed-Resume.pdf");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <>
       <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
@@ -48,7 +39,7 @@ const Header = () => {
           I am a full stack developer from India{" "}
         </motion.p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-       <motion.a
+          <motion.a
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1 }}
@@ -69,7 +60,8 @@ const Header = () => {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.2 }}
-            onClick={handleDownload}
+            href="/CV-Resume.pdf"
+            download
             className="group relative z-10 w-fit overflow-hidden rounded-full border  px-10 py-3 text-black flex items-center gap-2 cursor-pointer "
           >
             {/* Animated text */}
