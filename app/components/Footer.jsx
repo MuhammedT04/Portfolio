@@ -1,6 +1,11 @@
-import { assets } from "@/assets/assets";
-import Image from "next/image";
 import React from "react";
+import {
+  Linkedin,
+  Github,
+  Instagram,
+  Mail
+
+} from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,16 +13,16 @@ const Footer = () => {
  
 
         <div className="w-max flex items-center gap-2 mx-auto text-sm">
-          <Image src={assets.mail_icon} alt="" className="w-6" />
+          <Mail alt="" className="w-5" />
           muhammedmhd@gmail.com
         </div>
     
       <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-3.5 py-6">
-        <p>© 2025 ....</p>
-        <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-            <li><a target="_blank" href="https://github.com/MuhammedT04">GitHub</a></li>
-            <li><a target="_blank" href="https://github.com/MuhammedT04">Linkedin</a></li>
-            <li><a target="_blank" href="https://github.com/MuhammedT04"></a></li>
+        <p>© 2025 ...</p>
+        <ul className="flex items-center gap-5 justify-center mt-4 sm:mt-0">
+            <li><a target="_blank" href="https://www.linkedin.com/in/muhammedmhdt/"><Linkedin className="w-5 h-5" /></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/_mhmd_t_/"><Instagram className="w-5 h-5" /></a></li>
+            <li><a target="_blank" href="https://github.com/MuhammedT04"><Github className="w-5 h-5" /></a></li>
         </ul>
       </div>
     </div>

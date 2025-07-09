@@ -154,11 +154,11 @@ const Work = () => {
 
                   {/* Content */}
                   <div className="text-black space-y-6">
-                    <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-black to-black bg-clip-text text-transparent">
+                    <h2 className="text-3xl md:text-3xl font-bold bg-gradient-to-r from-black to-black bg-clip-text text-transparent">
                       {item.title}
                     </h2>
-                    <p className="text-lg md:text-xl text-black leading-relaxed">
-                      {item.description}
+                    <p className="text-lg md:text-sm text-black leading-relaxed">
+                      {item.category}
                     </p>
                     <div className="flex items-center gap-4 pt-4">
                       <Link

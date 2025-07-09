@@ -72,11 +72,11 @@ const WorkDetail = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3"></div>
 
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                 {project.title}
               </h1>
 
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 {project.description}
               </p>
             </div>

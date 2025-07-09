@@ -11,8 +11,6 @@ import figma from "./figma.png";
 import git from "./git.png";
 import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
-import logo from "./logo.png";
-import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
 import profile_img from "./profile-img.png";
@@ -44,13 +42,20 @@ import ecomm from "./E-comm.png";
 import ecomm1 from "./E-comm1.png";
 import ecomm2 from "./E-comm2.png";
 
-import zentry from './zentry.png'
-import zentry1 from './zentry1.png'
-import zentry2 from './zentry2.png'
+import zentry from "./zentry.png";
+import zentry1 from "./zentry1.png";
+import zentry2 from "./zentry2.png";
 
-import UMS from './UMS.png'
-import UMS1 from './UMS1.png'
-import UMS2 from './UMS2.png'
+import UMS from "./UMS.png";
+import UMS1 from "./UMS1.png";
+import UMS2 from "./UMS2.png";
+
+import o2 from "./o2.jpg";
+import carbon from "./carbon.jpg";
+import carbon1 from "./carbon1.png";
+
+import shop from "./shop.png";
+import shop1 from "./shop1.png";
 
 export const assets = {
   user_image,
@@ -66,8 +71,6 @@ export const assets = {
   git,
   mongodb,
   right_arrow_white,
-  logo,
-  logo_dark,
   mail_icon,
   mail_icon_dark,
   profile_img,
@@ -97,42 +100,116 @@ export const workData = [
   {
     id: 0,
     title: "OLX - Clone",
-    description: "Web Design ",
+    description: "Web Design",
+    category: "Frontend",
     bgImage: olx,
     image: [olx, olx1, olx2],
     link: "https://olx-clone-react-six.vercel.app/",
-    technologies:['React','Firebase',"TypeScript",'cloudinary']
-
+    technologies: [
+      "React",
+      "Firebase",
+      "TypeScript",
+      "TailwindCSS",
+      "cloudinary",
+    ],
   },
   {
     id: 1,
     title: "E-commerce",
-    description: "Web Design",
+    description:
+      "A complete e-commerce web app with a feature-rich Admin Dashboard. Includes Razorpay payments, Google OAuth, product/order management, offers, coupons, sales reports, returns, ledger book, and more. Built with JavaScript, EJS, Node.js, and MongoDB for a real-world store experience.",
+    category: "Full Stack",
     bgImage: ecomm2,
     image: [ecomm2, ecomm, ecomm1],
     link: "https://first-project-alfr.onrender.com",
     githubLink: "https://github.com/MuhammedT04/First-Project",
-    technologies:['JavaScript',"NodeJs","ExpressJS","Razorpay",'Mongodb',"Ejs","Multer",'Google auth']
+    technologies: [
+      "JavaScript",
+      "NodeJs",
+      "ExpressJS",
+      "Razorpay",
+      "Mongodb",
+      "Ejs",
+      "CSS",
+      "bootstrap",
+      "Multer",
+      "Google auth",
+    ],
   },
   {
     id: 2,
     title: "Zentry-Clone",
     description: "Gsap Animation",
+    category: "Frontend",
     bgImage: zentry2,
-     image: [zentry2, zentry, zentry1],
-    link:'https://zentry-clone-nu-one.vercel.app/',
-    githubLink:'https://github.com/MuhammedT04/zentry-clone-gsap',
-    technologies:['React','Gsap']
+    image: [zentry2, zentry, zentry1],
+    link: "https://zentry-clone-nu-one.vercel.app/",
+    githubLink: "https://github.com/MuhammedT04/zentry-clone-gsap",
+    technologies: ["React", "Gsap", "TailwindCSS"],
   },
   {
     id: 3,
     title: "User Management System",
     description: "Web Design",
-     bgImage: UMS,
-     image: [UMS, UMS1, UMS2],
-    link:'',
-    githubLink:'https://github.com/MuhammedT04/UMS-MERN',
-    technologies:['React','Redux','TypeScript','NodeJs','ExpressJS','Mongodb',"JWT auth"]
+    category: "Full Stack",
+    bgImage: UMS,
+    image: [UMS, UMS1, UMS2],
+    link: "https://github.com/MuhammedT04/UMS-MERN",
+    githubLink: "https://github.com/MuhammedT04/UMS-MERN",
+    technologies: [
+      "React",
+      "Redux",
+      "TypeScript",
+      "TailwindCSS",
+      "NodeJs",
+      "ExpressJS",
+      "Mongodb",
+      "JWT auth",
+    ],
+  },
+  {
+    id: 4,
+    title: "CarbonTrackr",
+    description:
+      "A responsive web app that helps users calculate and reduce their travel-related carbon footprint. Users input transportation mode, distance, and frequency to get real-time CO₂ estimates and AI-generated sustainability tips.",
+    category: "AI + Full Stack",
+    bgImage: carbon,
+    image: [carbon, carbon1, o2],
+    link: "https://carbon-footprint-tracker-phi.vercel.app/",
+    githubLink: "https://github.com/MuhammedT04/Carbon-Tracker",
+    technologies: [
+      "React",
+      "Redux",
+      "TypeScript",
+      "TailwindCSS",
+      "NodeJs",
+      "ExpressJS",
+      "Mongodb",
+      "OpenAI API",
+    ],
+  },
+  {
+    id: 5,
+    title: "Shopverse",
+    description:
+      "A modern full-stack e-commerce web app with user/admin roles, secure JWT authentication, Stripe payment integration, and webhook-based order tracking. Admins can manage products and view orders. The app features dynamic product handling, image uploads, a real-time cart system, and a clean responsive UI.",
+    category: "Full Stack",
+    bgImage: shop1,
+    image: [shop1, shop, shop],
+    link: "https://github.com/MuhammedT04/Shopverse",
+    githubLink: "https://github.com/MuhammedT04/Shopverse",
+    technologies: [
+      "React",
+      "Redux",
+      "TypeScript",
+      "TailwindCSS",
+      "NodeJs",
+      "ExpressJS",
+      "Mongodb",
+      "JWT auth",
+      "Sripe Payment",
+      "Webhook",
+    ],
   },
 ];
 
@@ -169,7 +246,7 @@ export const infoList = [
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built more than 5 projects",
+    description: "Built more than 6 projects",
   },
 ];
 
