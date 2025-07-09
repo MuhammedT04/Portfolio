@@ -9,6 +9,3 @@
   --dark-hover: #2a004a;
   --dark-theme: #11001f;
 }
-html.dark{
-  @apply bg-[var(--dark-theme)] text-white
-}
